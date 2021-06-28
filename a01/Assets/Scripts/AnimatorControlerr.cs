@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimatorControlerr : MonoBehaviour
 {
     Animator anim;
+    public float a;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,6 @@ public class AnimatorControlerr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        anim.SetTrigger("jump");
+        
     }
 }
