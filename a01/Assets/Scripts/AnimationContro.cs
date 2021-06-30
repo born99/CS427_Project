@@ -14,6 +14,10 @@ public class AnimationContro : MonoBehaviour
     public float jumpSpeed = 100f;
     float curentmovespeed;
     float curentjumpspeed;
+    bool isGround;
+    public Transform groundCheck;
+    public LayerMask groundlayer;
+    bool doublejump;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,19 +30,44 @@ public class AnimationContro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isGround)
+        {
+            doublejump = true;
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            curentjumpspeed = rigid.velocity.y + jumpSpeed;
+            if (isGround)
+            {
+                curentjumpspeed = rigid.velocity.y + jumpSpeed;
+                anim.Play("jump");
+            }
+            else
+            {
+                if (doublejump)
+                {
+                    curentjumpspeed = rigid.velocity.y + jumpSpeed;
+                    doublejump = false;
+                    
+                }
+            }
+            
         }
         else curentjumpspeed = rigid.velocity.y;
         if(Input.GetKey(KeyCode.D))
         {
             //rigid.AddForce(new Vector2(speed, 0));
             curentmovespeed = movespeed;
-            anim.Play("run");
             GetComponent<SpriteRenderer>().flipX = false;
-            colirun.enabled = true;
-            coli.enabled = false;
+            if (isGround)
+            {
+                anim.Play("run");
+                colirun.enabled = true;
+                coli.enabled = false;
+
+            }
+            
+
+
 
 
         }
@@ -50,9 +79,14 @@ public class AnimationContro : MonoBehaviour
                 //rigid.velocity = new Vector2(-movespeed, 0);
                 curentmovespeed =- movespeed;
                 GetComponent<SpriteRenderer>().flipX = true;
-                anim.Play("run");
-                colirun.enabled = true;
-                coli.enabled = false;
+                if (isGround)
+                {
+                    anim.Play("run");
+                    colirun.enabled = true;
+                    coli.enabled = false;
+
+                }
+
             }
             else
             {
@@ -68,7 +102,7 @@ public class AnimationContro : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        
+        isGround = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
         
     }
 }
