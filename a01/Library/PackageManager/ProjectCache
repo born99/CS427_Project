@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637606483580483170
+      ticks: 637606545688815667
     m_Hash: 4084016498
   m_LockFileStatus:
     m_FilePath: C:/Users/zxqua/Documents/GitHub/CS427_Project/a01/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637606483580493134
+      ticks: 637606545688815667
     m_Hash: 3322616664
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

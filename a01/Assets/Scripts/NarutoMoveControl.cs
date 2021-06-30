@@ -11,6 +11,10 @@ public class NarutoMoveControl : MonoBehaviour
     public LayerMask layer;
     BoxCollider2D boxcoli2d;
     Animator anim;
+    public int airjumpmax;
+    int airjump;
+    public Transform jumpeffect;
+    
     void Start()
     {
         rigid = transform.GetComponent<Rigidbody2D>();
@@ -21,9 +25,29 @@ public class NarutoMoveControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Isground() && Input.GetKeyDown(KeyCode.Space))
+        if (Isground()) airjump = 0;
+        if ( Input.GetKey(KeyCode.Space))
         {
-            rigid.velocity = Vector2.up * jumpspeed;
+            Debug.Log(rigid.velocity.y);
+            if (Isground())
+            {
+                rigid.velocity = Vector2.up * jumpspeed;
+            }
+            else
+            {
+                if(Input.GetKeyDown(KeyCode.Space))
+                {
+                    if(airjump<airjumpmax)
+                    {
+                        Instantiate(jumpeffect, transform.position, Quaternion.identity);
+                        rigid.velocity = Vector2.up * jumpspeed;
+                        airjump++;
+                    }
+                    
+                }    
+                
+            }
+            
         }
          HandleMovement();
         if(Isground())
@@ -42,7 +66,7 @@ public class NarutoMoveControl : MonoBehaviour
     bool Isground()
     {
         RaycastHit2D raycasthit2D = Physics2D.BoxCast(boxcoli2d.bounds.center, boxcoli2d.bounds.size, 0f, Vector2.down, .1f, layer);
-        Debug.Log(raycasthit2D.collider);
+        
         return raycasthit2D.collider != null;
     }
     void HandleMovement()
