@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 73404270}
   - component: {fileID: 73404269}
   - component: {fileID: 73404274}
+  - component: {fileID: 73404275}
   m_Layer: 0
   m_Name: naruto_11
   m_TagString: Untagged
@@ -310,7 +311,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 10
   m_Material: {fileID: 6200000, guid: 4a71ee893c318734388d93aafbae8f6c, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -435,7 +436,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73404268}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 278e6acac5c62b646b3472e15428388d, type: 3}
   m_Name: 
@@ -445,6 +446,23 @@ MonoBehaviour:
   jumpSpeed: 15
   groundCheck: {fileID: 2071643059}
   groundlayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &73404275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73404268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d01c95c5b7fa3498f42e53a7257a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpspeed: 23
+  movespeed: 10
+  layer:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &99264639
@@ -1283,10 +1301,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -4.113366, y: 1.367619}
+    - - {x: -4.221809, y: 1.1974046}
+      - {x: -4.113366, y: 1.367619}
       - {x: -7.6192636, y: 1.3830752}
-      - {x: -7.033548, y: 0.8459759}
-      - {x: -4.4352646, y: 0.8750107}
+      - {x: -7.2911854, y: 1.1220167}
+      - {x: -4.379368, y: 1.0484092}
       - {x: -4.362342, y: 0.97682136}
 --- !u!1 &293664983
 GameObject:
@@ -1518,7 +1537,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -7.932472, y: -1.9454148}
-      - {x: -7.7467713, y: -0.92954254}
+      - {x: -7.7467713, y: -0.87433434}
       - {x: -9.804439, y: -0.86200166}
       - {x: -9.784397, y: -2.2582006}
       - {x: 11.379473, y: -2.3760197}
@@ -2257,7 +2276,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.8600764
+  orthographic size: 4.383773
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2281,7 +2300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.24, y: 0.03, z: -10}
+  m_LocalPosition: {x: 0.11, y: 0.17, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3713,9 +3732,9 @@ PolygonCollider2D:
     - - {x: 5.1682243, y: 0.6515803}
       - {x: 5.1372676, y: 0.5538237}
       - {x: -3.012539, y: 0.5751316}
-      - {x: -2.6202333, y: 0.032996923}
-      - {x: 0.79103005, y: 0.032997012}
-      - {x: 5.0159526, y: 0.04770243}
+      - {x: -2.6754413, y: 0.217024}
+      - {x: 0.79103005, y: 0.25245273}
+      - {x: 5.1037354, y: 0.31104928}
 --- !u!4 &890359015
 Transform:
   m_ObjectHideFlags: 0
@@ -4484,8 +4503,8 @@ PolygonCollider2D:
     - - {x: -4.2653728, y: 1.4119964}
       - {x: -7.432782, y: 1.4264357}
       - {x: -7.4945254, y: 1.3026547}
-      - {x: -7.203959, y: 0.9843781}
-      - {x: -4.5742846, y: 0.9359082}
+      - {x: -7.2959723, y: 1.186808}
+      - {x: -4.3718543, y: 1.2119488}
       - {x: -4.404894, y: 1.2299497}
 --- !u!50 &1243225400
 Rigidbody2D:
