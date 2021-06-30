@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143555748993135929}
   m_LocalRotation: {x: -0.00000008888933, y: 0.0000045886977, z: -0.01936773, w: 0.9998125}
-  m_LocalPosition: {x: -8.685051, y: 0.50902385, z: 0}
+  m_LocalPosition: {x: -8.066, y: 0.293, z: -0}
   m_LocalScale: {x: 2.5999997, y: 2.5999997, z: 2.6}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,7 +42,7 @@ ParticleSystem:
   serializedVersion: 7
   lengthInSec: 0.5
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -667,12 +667,12 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 0.45, y: 0.19, z: 1}
-    placementMode: 0
+    m_Scale: {x: 0.32, y: -0.12, z: 1}
+    placementMode: 1
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
     m_MeshSpawn:
-      mode: 0
+      mode: 1
       spread: 0
       speed:
         serializedVersion: 2
@@ -1295,7 +1295,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 0
+    enabled: 1
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -1304,7 +1304,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 0}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1480,15 +1480,16 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 9122326920336652728, guid: 2c4508bf6d9012a459c22e30ceb5d504, type: 3}
+    - sprite: {fileID: 7303297924094666765, guid: 2c4508bf6d9012a459c22e30ceb5d504, type: 3}
+    - sprite: {fileID: -8033974899714403598, guid: 2c4508bf6d9012a459c22e30ceb5d504, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
-    enabled: 0
+    enabled: 1
     x:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -0.03
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4747,7 +4748,7 @@ ParticleSystemRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143555748993135929}
   m_Enabled: 1
-  m_CastShadows: 0
+  m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -4758,7 +4759,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

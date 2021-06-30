@@ -14,7 +14,9 @@ public class NarutoMoveControl : MonoBehaviour
     public int airjumpmax;
     int airjump;
     public Transform jumpeffect;
-    
+    public GameObject shuriken;
+    public Transform shotpointleft;
+    public Transform shotpointright;
     void Start()
     {
         rigid = transform.GetComponent<Rigidbody2D>();
@@ -50,6 +52,19 @@ public class NarutoMoveControl : MonoBehaviour
             
         }
          HandleMovement();
+        if(Input.GetKeyDown(KeyCode.J)&& Isground() && rigid.velocity.x==0)
+        {
+             if (GetComponent<SpriteRenderer>().flipX == true)
+            {
+                Instantiate(shuriken, shotpointleft.position, transform.rotation);
+            }
+            else
+            {
+                Instantiate(shuriken, shotpointright.position, transform.rotation);
+            }
+            
+            anim.SetTrigger("throw");
+        }
         if(Isground())
         {
             if(rigid.velocity.x!=0)
@@ -69,6 +84,7 @@ public class NarutoMoveControl : MonoBehaviour
         
         return raycasthit2D.collider != null;
     }
+    
     void HandleMovement()
     {
         if(Input.GetKey(KeyCode.A))
