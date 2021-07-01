@@ -15,8 +15,8 @@ MSSV: 1751105
 
 ## CONTROL:
 
-**<kbd> **A** </kbd>&emsp;&emsp;&emsp;&emsp;: Move left\
-<kbd> **D** </kbd>&emsp;&emsp;&emsp;&emsp;  : Move right\
+**<kbd> **A** </kbd>&emsp;&emsp;&emsp;&emsp; : Move left\
+<kbd> **D** </kbd>&emsp;&emsp;&emsp;&emsp;   : Move right\
 <kbd>	**Spacebar** </kbd>&emsp;       : Jump\
 <kbd>	**Spacebar** </kbd> x 2   : Double Jump\
 <kbd> **J** </kbd>&emsp;&emsp;&emsp;&emsp;  : Throw shuriken**
