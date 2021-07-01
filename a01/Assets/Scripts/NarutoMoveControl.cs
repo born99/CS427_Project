@@ -17,6 +17,7 @@ public class NarutoMoveControl : MonoBehaviour
     public GameObject shuriken;
     public Transform shotpointleft;
     public Transform shotpointright;
+    PhysicsMaterial2D pm2d;
     void Start()
     {
         rigid = transform.GetComponent<Rigidbody2D>();
@@ -51,8 +52,9 @@ public class NarutoMoveControl : MonoBehaviour
             }
             
         }
-         HandleMovement();
-        if(Input.GetKeyDown(KeyCode.J)&& Isground() && rigid.velocity.x==0)
+          
+         if (anim.GetBool("death")==false) HandleMovement();
+        if (Input.GetKeyDown(KeyCode.J)&& Isground() && rigid.velocity.x==0)
         {
              if (GetComponent<SpriteRenderer>().flipX == true)
             {
@@ -69,7 +71,11 @@ public class NarutoMoveControl : MonoBehaviour
         {
             if(rigid.velocity.x!=0)
             {
-                anim.Play("run");
+                anim.SetBool("run",true);
+            }
+            else
+            {
+                anim.SetBool("run", false);
             }
            
         }
@@ -77,7 +83,30 @@ public class NarutoMoveControl : MonoBehaviour
         {
             anim.Play("jump");
         }
+        Debug.Log(rigid.velocity.x);
     }
+
+    
+    public void Death()
+    {
+
+        //Destroy(gameObject);
+        
+        anim.SetBool("death", true);
+
+        
+        Debug.Log("coli");
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("end"))
+        {
+            Destroy(gameObject);
+        }
+
+
+
+
+
+    }
+    
     bool Isground()
     {
         RaycastHit2D raycasthit2D = Physics2D.BoxCast(boxcoli2d.bounds.center, boxcoli2d.bounds.size, 0f, Vector2.down, .1f, layer);

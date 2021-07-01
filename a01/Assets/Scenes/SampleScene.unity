@@ -289,9 +289,9 @@ GameObject:
   - component: {fileID: 73404269}
   - component: {fileID: 73404274}
   - component: {fileID: 73404275}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: naruto_11
-  m_TagString: Untagged
+  m_TagString: main
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -421,7 +421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73404268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.55, y: -2.46, z: 0}
+  m_LocalPosition: {x: -6.42, y: -2.34, z: 0}
   m_LocalScale: {x: 2.6, y: 2.6, z: 2.6}
   m_Children:
   - {fileID: 1346490982}
@@ -644,7 +644,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 129568358}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shotpointleft
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -4737,7 +4737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1346490982}
   - component: {fileID: 1346490983}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: collider_run
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5732,6 +5732,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  layer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1704578112
 GameObject:
   m_ObjectHideFlags: 0
@@ -7611,7 +7614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2113740910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shotpointright
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}

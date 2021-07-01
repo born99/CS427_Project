@@ -6,10 +6,13 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     Animator anim;
+    BoxCollider2D boxcoli2d;
+    public LayerMask layer;
     // Start is called before the first frame update
     void Start()
     {
         anim=GetComponent<Animator>();
+        boxcoli2d = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -24,9 +27,17 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
 
+        RaycastHit2D raycasthit2D = Physics2D.BoxCast(boxcoli2d.bounds.center, boxcoli2d.bounds.size, 0f, Vector2.left, .1f, layer);
 
+        if (raycasthit2D ==true)
+        {
+            if (raycasthit2D.collider.CompareTag("main"))
+            {
+                raycasthit2D.collider.GetComponent<NarutoMoveControl>().Death();
+                
+            }    
+        }
 
     }
     public void Takedamage(int dame)
