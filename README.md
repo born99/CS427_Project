@@ -1,5 +1,5 @@
-# CS427_Project
-# Group 9 - 'Wakanda'
+# CS427_Project -  Infinite Tsukuyomi
+## Group 9 - 'Wakanda'
 
 Nguyễn Minh Quân\
 MSSV: 1751097
@@ -20,3 +20,11 @@ MSSV: 1751105
 <kbd>	**Spacebar** </kbd>&emsp;&nbsp;&ensp;        : Jump\
 <kbd>	**Spacebar** </kbd> x 2&nbsp;                : Double Jump\
 <kbd> **J** </kbd>&emsp;&emsp;&emsp;&emsp;&ensp;   : Throw shuriken**
+
+### Authors
+
+ - [@zxquan123](https://github.com/zxquan123)
+ - [@Minh Nhat](https://github.com/born99)
+ - [@dangletuananh69](https://github.com/dangletuananh69)
+ - [@dvqthinh25111999](https://github.com/dvqthinh25111999)
+
