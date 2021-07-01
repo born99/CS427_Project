@@ -18,4 +18,4 @@ A: go left\
 D: go right\
 Spacebar: jump\
 Spacebarx2: double jump\
-J: throw shuriken\
+J: throw shuriken
