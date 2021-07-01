@@ -56,7 +56,7 @@ public class NarutoMoveControl : MonoBehaviour
         {
              if (GetComponent<SpriteRenderer>().flipX == true)
             {
-                Instantiate(shuriken, shotpointleft.position, transform.rotation);
+                Instantiate(shuriken, shotpointleft.position, transform.rotation*Quaternion.Euler(0f,180f,0f));
             }
             else
             {

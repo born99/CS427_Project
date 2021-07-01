@@ -10,6 +10,7 @@ public class shuriken : MonoBehaviour
     public LayerMask whatisSolid;
     public float distance;
     public int damage;
+    public GameObject naruto;
     void Start()
     {
         Invoke("destroy", lifetime);
@@ -28,7 +29,11 @@ public class shuriken : MonoBehaviour
             }
             destroy();
         }
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+    
+       
+        
+         transform.Translate(Vector2.right * speed * Time.deltaTime);
+        
     }
     void destroy()
     {
