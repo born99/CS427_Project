@@ -14,7 +14,7 @@ MSSV: 1751049
 MSSV: 1751105
 
 CONTROL:\
-A: go left\
+<kbd>A</kbd>: go left\
 D: go right\
 Spacebar: jump\
 Spacebarx2: double jump\
