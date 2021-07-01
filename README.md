@@ -13,8 +13,9 @@ MSSV: 1751049
 Đỗ Vương Quốc Thịnh\
 MSSV: 1751105
 
-**CONTROL:\
-<kbd> **A** </kbd>              : Move left\
+## CONTROL:\
+
+**<kbd> **A** </kbd>              : Move left\
 <kbd> **D** </kbd>              : Move right\
 <kbd>	**Spacebar** </kbd>       : Jump\
 <kbd>	**Spacebar** </kbd> x 2   : Double Jump\
