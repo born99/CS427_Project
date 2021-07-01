@@ -17,6 +17,6 @@ MSSV: 1751105
 
 **<kbd> **A** </kbd>&emsp;&emsp;&emsp;&emsp;&ensp; : Move left\
 <kbd> **D** </kbd>&emsp;&emsp;&emsp;&emsp;&ensp;   : Move right\
-<kbd>	**Spacebar** </kbd>&emsp;       : Jump\
-<kbd>	**Spacebar** </kbd> x 2   : Double Jump\
-<kbd> **J** </kbd>&emsp;&emsp;&emsp;&emsp;&ensp;  : Throw shuriken**
+<kbd>	**Spacebar** </kbd>&emsp;&nbsp;;&ensp;       : Jump\
+<kbd>	**Spacebar** </kbd> x 2&nbsp;                : Double Jump\
+<kbd> **J** </kbd>&emsp;&emsp;&emsp;&emsp;&ensp;   : Throw shuriken**
