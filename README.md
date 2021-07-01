@@ -23,8 +23,8 @@ MSSV: 1751105
 
 ### Authors
 
- - [@zxquan123](https://github.com/zxquan123)
- - [@Minh Nhat](https://github.com/born99)
- - [@dangletuananh69](https://github.com/dangletuananh69)
- - [@dvqthinh25111999](https://github.com/dvqthinh25111999)
+ - [@Nguyen Minh Quan](https://github.com/zxquan123) - 1751097
+ - [@Nguyen Minh Nhat](https://github.com/born99) - 1751090
+ - [@Dang Le Tuan Anh](https://github.com/dangletuananh69) - 1751049
+ - [@Do Vuong Quoc Thinh](https://github.com/dvqthinh25111999) - 1751105
 
