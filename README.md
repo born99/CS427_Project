@@ -13,10 +13,10 @@ MSSV: 1751049
 Đỗ Vương Quốc Thịnh\
 MSSV: 1751105
 
-## CONTROL:
+## CONTROL
 
 **<kbd> **A** </kbd>&emsp;&emsp;&emsp;&emsp;&ensp; : Move left\
 <kbd> **D** </kbd>&emsp;&emsp;&emsp;&emsp;&ensp;   : Move right\
-<kbd>	**Spacebar** </kbd>&emsp;&nbsp;&ensp;       : Jump\
+<kbd>	**Spacebar** </kbd>&emsp;&nbsp;&ensp;        : Jump\
 <kbd>	**Spacebar** </kbd> x 2&nbsp;                : Double Jump\
 <kbd> **J** </kbd>&emsp;&emsp;&emsp;&emsp;&ensp;   : Throw shuriken**
