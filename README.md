@@ -12,8 +12,8 @@
 
 ## Authors
 ### Group 9 - 'Wakanda'
- - [@Nguyen Minh Quan](https://github.com/zxquan123) - 1751097
- - [@Nguyen Minh Nhat](https://github.com/born99) - 1751090
- - [@Dang Le Tuan Anh](https://github.com/dangletuananh69) - 1751049
- - [@Do Vuong Quoc Thinh](https://github.com/dvqthinh25111999) - 1751105
+ - [Nguyen Minh Quan](https://github.com/zxquan123) - 1751097
+ - [Nguyen Minh Nhat](https://github.com/born99) - 1751090
+ - [Dang Le Tuan Anh](https://github.com/dangletuananh69) - 1751049
+ - [Do Vuong Quoc Thinh](https://github.com/dvqthinh25111999) - 1751105
 
