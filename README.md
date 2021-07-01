@@ -12,3 +12,10 @@ MSSV: 1751049
 
 Đỗ Vương Quốc Thịnh
 MSSV: 1751105
+
+Control:
+A: go left
+D: go right
+Spacebar: jump
+Spacebarx2: double jump
+J: throw shuriken
