@@ -14,6 +14,6 @@
 ### Group 9 - 'Wakanda'
  1. [Nguyen Minh Quan](https://github.com/zxquan123) &emsp;&ensp; - 1751097
  2. [Nguyen Minh Nhat](https://github.com/born99) &emsp;&ensp; - 1751090
- 3. [Dang Le Tuan Anh](https://github.com/dangletuananh69) &emsp; - 1751049
+ 3. [Dang Le Tuan Anh](https://github.com/dangletuananh69) &emsp;&ensp; - 1751049
  4. [Do Vuong Quoc Thinh](https://github.com/dvqthinh25111999) &ensp; - 1751105
 
